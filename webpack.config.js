@@ -3,12 +3,13 @@ const path = require('path');
 //webpack.config.js
 
 module.exports = (env) => {
+  const environment = env || 'production';
   return {
-    mode: env || 'production',
+    mode: environment,
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'build'),
-        filename: 'app.bundle.js'
+        filename: 'app.' + environment + 'bundle.js'
     },
     module: {
       rules: [
