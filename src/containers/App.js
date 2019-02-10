@@ -28,7 +28,6 @@ class App extends React.Component {
             <Title 
               elementsLength={this.state.data.length}
             />
-            Tutaj pojawią się komponenty naszej aplikacji.
         </div>
     );
   }
